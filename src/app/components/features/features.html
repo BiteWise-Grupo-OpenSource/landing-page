@@ -1,0 +1,21 @@
+<section class="s-feat">
+  <div class="feat-header">
+    <div class="section-eyebrow" style="justify-content:center;">Funcionalidades</div>
+    <h2 class="feat-title">Todo lo que necesitas,<br>nada que no necesitas</h2>
+    <p class="feat-subtitle">Herramientas para vidas reales — no para el usuario promedio de ninguna app.</p>
+  </div>
+  <div class="feat-grid">
+    <div class="feat-card" *ngFor="let f of features">
+      <div class="feat-icon">{{ f.icon }}</div>
+      <div class="feat-name">{{ f.name }}</div>
+      <div class="feat-desc">{{ f.desc }}</div>
+    </div>
+  </div>
+  <div class="feat-wide">
+    <div class="feat-wide-icon">✨</div>
+    <div>
+      <div class="feat-wide-name">Modelo freemium que crece contigo</div>
+      <div class="feat-wide-desc">Gratis para lo esencial: plan básico semanal, seguimiento diario y restricciones simples. Premium desbloquea análisis nutricional avanzado, historial clínico completo y soporte prioritario.</div>
+    </div>
+  </div>
+</section>

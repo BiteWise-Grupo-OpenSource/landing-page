@@ -1,0 +1,39 @@
+.s-how { background: var(--cream); padding: 80px 48px; transition: background var(--ease); }
+.how-header { text-align: center; margin-bottom: 60px; }
+.how-title { font-family: var(--display); font-weight: 800; font-size: clamp(28px,3.5vw,42px); letter-spacing: -2px; color: var(--charcoal); line-height: 1.1; }
+.how-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px; }
+.how-card { background: var(--sage); border-radius: var(--r-card); padding: 36px 28px 32px; border: 1px solid var(--sage-mid); text-align: center; transition: border-color .2s, background var(--ease); }
+.how-card:hover { border-color: rgba(200,107,58,.35); }
+.how-num { font-family: var(--display); font-weight: 800; font-size: 72px; color: var(--sage-mid); letter-spacing: -5px; line-height: 1; margin-bottom: 16px; transition: color .25s; }
+.how-card:hover .how-num { color: var(--terra); }
+.how-name { font-family: var(--display); font-weight: 800; font-size: 17px; color: var(--charcoal); margin-bottom: 12px; letter-spacing: -0.5px; }
+.how-desc { font-size: 14px; line-height: 1.65; color: var(--muted); }
+
+.s-how { background: var(--cream); padding: 80px 48px; transition: background var(--ease); }
+.how-header { text-align: center; margin-bottom: 60px; }
+.how-title { font-family: var(--display); font-weight: 800; font-size: clamp(26px,3.5vw,42px); letter-spacing: -2px; color: var(--charcoal); line-height: 1.1; }
+.how-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px; }
+.how-card { background: var(--sage); border-radius: var(--r-card); padding: 36px 28px 32px; border: 1px solid var(--sage-mid); text-align: center; transition: border-color .2s, background var(--ease); }
+.how-card:hover { border-color: rgba(200,107,58,.35); }
+.how-num { font-family: var(--display); font-weight: 800; font-size: 72px; color: var(--sage-mid); letter-spacing: -5px; line-height: 1; margin-bottom: 16px; transition: color .25s; }
+.how-card:hover .how-num { color: var(--terra); }
+.how-name { font-family: var(--display); font-weight: 800; font-size: 17px; color: var(--charcoal); margin-bottom: 12px; letter-spacing: -0.5px; }
+.how-desc { font-size: 14px; line-height: 1.65; color: var(--muted); }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 1024px) {
+  .s-how { padding: 64px 28px; }
+  .how-num { font-size: 56px; }
+}
+
+@media (max-width: 768px) {
+  .s-how { padding: 56px 24px; }
+  .how-header { margin-bottom: 40px; }
+  .how-grid { grid-template-columns: 1fr; gap: 16px; }
+  .how-card { padding: 28px 24px; border-radius: 20px; text-align: left; display: flex; flex-direction: column; align-items: flex-start; }
+  .how-num { font-size: 48px; margin-bottom: 8px; }
+}
+
+@media (max-width: 480px) {
+  .s-how { padding: 40px 20px; }
+}

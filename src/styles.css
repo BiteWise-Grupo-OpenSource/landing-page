@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=Outfit:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --cream: #fdf6ec; --cream2: #f7ede0; --sage: #eef4ee; --sage-mid: #d8e8d6;
+  --terra: #c86b3a; --terra-lt: #e0865a; --amber: #d4954a;
+  --charcoal: #131109; --charcoal2: #1e1b10; --muted: #7a7468;
+  --border: #e4ddd2; --surface: #ffffff; --bg-page: #f5ede0;
+  --r-card: 28px; --r-sm: 12px;
+  --display: 'Bricolage Grotesque', sans-serif;
+  --body: 'Outfit', sans-serif;
+  --ease: 0.45s cubic-bezier(0.16,1,0.3,1);
+}
+[data-theme="dark"] {
+  --cream: #1a1610; --cream2: #201c14; --sage: #151e14; --sage-mid: #1f2e1e;
+  --terra: #e07840; --terra-lt: #f09060; --amber: #e0a050;
+  --charcoal: #f0ebe2; --charcoal2: #d0c8bc; --muted: #8a8278;
+  --border: #2e2a22; --surface: #201c14; --bg-page: #120f0a;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: var(--body); background: var(--bg-page); color: var(--charcoal); transition: background var(--ease), color var(--ease); }
+
+.btn-primary {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--terra); color: #fff;
+  font-family: var(--body); font-size: 14px; font-weight: 700;
+  padding: 13px 28px; border-radius: 999px;
+  border: none; cursor: pointer; text-decoration: none;
+  transition: background .2s, transform .15s; letter-spacing: -0.2px;
+}
+.btn-primary:hover { background: var(--terra-lt); transform: translateY(-1px); }
+
+.btn-outline {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: transparent; color: var(--charcoal);
+  font-family: var(--body); font-size: 14px; font-weight: 500;
+  padding: 13px 28px; border-radius: 999px;
+  border: 1.5px solid var(--border); cursor: pointer; text-decoration: none;
+  transition: border-color .2s, color .2s;
+}
+.btn-outline:hover { border-color: var(--terra); color: var(--terra); }
+
+.section-eyebrow {
+  font-family: var(--body); font-size: 11px; font-weight: 700;
+  letter-spacing: 2px; text-transform: uppercase;
+  color: var(--terra); margin-bottom: 12px;
+  display: flex; align-items: center; gap: 8px;
+}
+.section-eyebrow::before { content: ''; width: 16px; height: 2px; background: var(--terra); border-radius: 999px; }
+@media (max-width: 768px) {
+  .btn-primary, .btn-outline { font-size: 13px; padding: 11px 22px; }
+}

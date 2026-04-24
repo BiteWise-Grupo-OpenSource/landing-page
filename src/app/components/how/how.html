@@ -1,0 +1,13 @@
+<section class="s-how">
+  <div class="how-header">
+    <div class="section-eyebrow" style="justify-content:center;">El proceso</div>
+    <h2 class="how-title">Tres pasos para empezar</h2>
+  </div>
+  <div class="how-grid">
+    <div class="how-card" *ngFor="let step of steps">
+      <div class="how-num">{{ step.num }}</div>
+      <div class="how-name">{{ step.name }}</div>
+      <div class="how-desc">{{ step.desc }}</div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,71 @@
+.s-pricing { background: var(--sage); padding: 80px 48px; transition: background var(--ease); }
+.pricing-header { text-align: center; margin-bottom: 48px; }
+.pricing-title { font-family: var(--display); font-weight: 800; font-size: clamp(28px,3.5vw,42px); letter-spacing: -2px; color: var(--charcoal); line-height: 1.1; }
+.pricing-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; max-width: 720px; margin: 0 auto; }
+.pricing-card { background: var(--cream); border-radius: var(--r-card); padding: 36px 32px; border: 1.5px solid var(--border); position: relative; transition: background var(--ease); }
+.pricing-card.premium { border-color: transparent; }
+.pricing-card.premium::before {
+  content: ''; position: absolute; inset: -1.5px; border-radius: calc(var(--r-card) + 1.5px);
+  background: linear-gradient(135deg, var(--terra), var(--amber), var(--terra));
+  background-size: 200% 200%; z-index: -1;
+  animation: borderRotate 4s linear infinite;
+}
+@keyframes borderRotate { 0%{background-position:0% 50%;} 50%{background-position:100% 50%;} 100%{background-position:0% 50%;} }
+.pricing-badge { display: inline-block; background: var(--terra); color: #fff; font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; padding: 4px 14px; border-radius: 999px; margin-bottom: 16px; }
+.plan-name { font-size: 12px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--muted); margin-bottom: 12px; }
+.plan-price { font-family: var(--display); font-weight: 800; font-size: 56px; color: var(--charcoal); letter-spacing: -3px; line-height: 1; margin-bottom: 4px; }
+.plan-price span { font-size: 22px; color: var(--muted); font-family: var(--body); font-weight: 500; vertical-align: top; margin-top: 10px; display: inline-block; }
+.plan-period { font-size: 13px; color: var(--muted); margin-bottom: 16px; }
+.plan-desc { font-size: 14px; color: var(--muted); line-height: 1.6; margin-bottom: 24px; }
+.plan-features { list-style: none; display: flex; flex-direction: column; gap: 10px; margin-bottom: 28px; }
+.plan-features li { display: flex; align-items: center; gap: 10px; font-size: 14px; color: var(--charcoal); }
+.plan-features li::before { content: '✓'; width: 20px; height: 20px; border-radius: 6px; background: rgba(200,107,58,.1); color: var(--terra); display: inline-flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 700; flex-shrink: 0; }
+.plan-btn { display: block; width: 100%; text-align: center; text-decoration: none; padding: 14px; border-radius: 999px; font-size: 15px; font-weight: 700; cursor: pointer; transition: background .2s, transform .15s; font-family: var(--body); }
+.plan-btn.outline { border: 1.5px solid var(--border); color: var(--charcoal); background: transparent; }
+.plan-btn.outline:hover { border-color: var(--terra); color: var(--terra); }
+.plan-btn.filled { background: var(--terra); color: #fff; border: none; }
+.plan-btn.filled:hover { background: var(--terra-lt); transform: translateY(-1px); }
+
+.s-pricing { background: var(--sage); padding: 80px 48px; transition: background var(--ease); }
+.pricing-header { text-align: center; margin-bottom: 48px; }
+.pricing-title { font-family: var(--display); font-weight: 800; font-size: clamp(26px,3.5vw,42px); letter-spacing: -2px; color: var(--charcoal); line-height: 1.1; }
+.pricing-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; max-width: 720px; margin: 0 auto; }
+.pricing-card { background: var(--cream); border-radius: var(--r-card); padding: 36px 32px; border: 1.5px solid var(--border); position: relative; transition: background var(--ease); }
+.pricing-card.premium { border-color: transparent; }
+.pricing-card.premium::before {
+  content: ''; position: absolute; inset: -1.5px; border-radius: calc(var(--r-card) + 1.5px);
+  background: linear-gradient(135deg, var(--terra), var(--amber), var(--terra));
+  background-size: 200% 200%; z-index: -1;
+  animation: borderRotate 4s linear infinite;
+}
+@keyframes borderRotate { 0%{background-position:0% 50%;} 50%{background-position:100% 50%;} 100%{background-position:0% 50%;} }
+.pricing-badge { display: inline-block; background: var(--terra); color: #fff; font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; padding: 4px 14px; border-radius: 999px; margin-bottom: 16px; }
+.plan-name { font-size: 12px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--muted); margin-bottom: 12px; }
+.plan-price { font-family: var(--display); font-weight: 800; font-size: 56px; color: var(--charcoal); letter-spacing: -3px; line-height: 1; margin-bottom: 4px; }
+.plan-price span { font-size: 22px; color: var(--muted); font-family: var(--body); font-weight: 500; vertical-align: top; margin-top: 10px; display: inline-block; }
+.plan-period { font-size: 13px; color: var(--muted); margin-bottom: 16px; }
+.plan-desc { font-size: 14px; color: var(--muted); line-height: 1.6; margin-bottom: 24px; }
+.plan-features { list-style: none; display: flex; flex-direction: column; gap: 10px; margin-bottom: 28px; }
+.plan-features li { display: flex; align-items: center; gap: 10px; font-size: 14px; color: var(--charcoal); }
+.plan-features li::before { content: '✓'; width: 20px; height: 20px; border-radius: 6px; background: rgba(200,107,58,.1); color: var(--terra); display: inline-flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 700; flex-shrink: 0; }
+.plan-btn { display: block; width: 100%; text-align: center; text-decoration: none; padding: 14px; border-radius: 999px; font-size: 15px; font-weight: 700; cursor: pointer; transition: background .2s, transform .15s; font-family: var(--body); }
+.plan-btn.outline { border: 1.5px solid var(--border); color: var(--charcoal); background: transparent; }
+.plan-btn.outline:hover { border-color: var(--terra); color: var(--terra); }
+.plan-btn.filled { background: var(--terra); color: #fff; border: none; }
+.plan-btn.filled:hover { background: var(--terra-lt); transform: translateY(-1px); }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 1024px) {
+  .s-pricing { padding: 64px 28px; }
+}
+
+@media (max-width: 768px) {
+  .s-pricing { padding: 56px 24px; }
+  .pricing-grid { grid-template-columns: 1fr; max-width: 440px; gap: 24px; }
+}
+
+@media (max-width: 480px) {
+  .s-pricing { padding: 40px 20px; }
+  .pricing-card { padding: 28px 24px; border-radius: 20px; }
+  .plan-price { font-size: 48px; }
+}

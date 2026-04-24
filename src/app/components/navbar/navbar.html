@@ -1,0 +1,15 @@
+<nav class="s-nav">
+  <div class="nav-logo">Bite<span>.</span>Wise</div>
+  <ul class="nav-links">
+    <li><a href="#">Funciones</a></li>
+    <li><a href="#">Cómo funciona</a></li>
+    <li><a href="#">Precios</a></li>
+  </ul>
+  <div class="nav-actions">
+    <a href="#" class="nav-login">Ingresar</a>
+    <button class="theme-toggle" (click)="toggleTheme()" title="Cambiar tema">
+      <div class="theme-thumb">{{ isDark ? '🌙' : '☀' }}</div>
+    </button>
+    <a href="#" class="nav-cta">Comenzar gratis</a>
+  </div>
+</nav>
